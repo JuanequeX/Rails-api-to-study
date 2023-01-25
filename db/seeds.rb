@@ -5,3 +5,5 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+Post.create(title: "chatGPT", body: "A good future for the humanity")
+Post.create(title: "OpenAI", body: "A good future for the humanity")

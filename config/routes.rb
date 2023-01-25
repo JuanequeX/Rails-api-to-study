@@ -1,10 +1,8 @@
 Rails.application.routes.draw do
-  get 'posts/index'
-  get 'posts/create'
-  get 'posts/update'
-  get 'posts/destroy'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  scope '/api/v1' do
+    resources :posts
+  end
+  # get '/posts', to 'post#index'
+  # post '/posts', to: 'posts#create'
+  # patch '/posts/:id', to: 'posts#update'
 end
